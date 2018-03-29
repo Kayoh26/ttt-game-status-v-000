@@ -43,11 +43,11 @@ def full?(board)
 end
 
 def draw?(board)
-  won?(board).nil && full?(board)
+  won?(board).nil? && full?(board)
 end
 
 def over?(board)
-  won?(board) || draw?(board) || full?(board)
+  !won?(board).nil? || draw?(board) || full?(board)
 end
 
 def winner(board)
