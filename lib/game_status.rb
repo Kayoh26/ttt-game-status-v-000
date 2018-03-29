@@ -30,6 +30,6 @@ def won? (board)
     position_not_taken = position_taken?(board, win_index_1) && position_taken?(board, win_index_2) && position_taken?(board, win_index_3)
     
     position_1 == position_2 && position_2 == position_3 && position_not_taken
-    #binding.pry
+    
   end
 end
