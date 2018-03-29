@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
 
-def won? (board)
+def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
     #Win Indicies
     win_index_1 = win_combination[0]
