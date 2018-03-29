@@ -31,6 +31,7 @@ def won? (board)
     
     result = position_1 == position_2  && position_2 == position_3
     
+    result && position_not_taken
     binding.pry
   end
 end
