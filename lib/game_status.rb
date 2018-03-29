@@ -40,6 +40,8 @@ end
 
 def full(board)
   board.none? do |element|
-    position_taken?(board,element)
+    result = position_taken?(board,element)
+    binding.pry
+  
   end
 end
