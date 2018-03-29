@@ -19,16 +19,20 @@ WIN_COMBINATIONS = [
 
 def won? (board)
   WIN_COMBINATIONS.detect do |win_combination|
+    #Win Indicies
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
     
+    #elements in each position
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     
+    #Check to make sure none are spaces
     position_not_taken = position_taken?(board, win_index_1) && position_taken?(board, win_index_2) && position_taken?(board, win_index_3)
     
+    #Check to see if all 3 elements are the same and are not spaces.
     position_1 == position_2 && position_2 == position_3 && position_not_taken
     
   end
