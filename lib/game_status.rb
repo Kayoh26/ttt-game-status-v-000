@@ -42,3 +42,6 @@ def full?(board)
   board.none? {|element| element == " "}
 end
 
+def draw?(board)
+  !won?(board) && full?(board)
+end
