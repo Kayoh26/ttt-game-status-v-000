@@ -38,10 +38,8 @@ def won? (board)
   end
 end
 
-def full(board)
+def full?(board)
   board.none? do |element|
-    result = position_taken?(board,element)
-    binding.pry
-  
+    position_taken?(board,element)
   end
 end
