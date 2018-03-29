@@ -41,3 +41,4 @@ end
 def full?(board)
   board.none? {|element| element == " "}
 end
+
