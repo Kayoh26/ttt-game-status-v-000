@@ -37,3 +37,7 @@ def won? (board)
     
   end
 end
+
+def full(board)
+  
+end
