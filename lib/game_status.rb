@@ -39,8 +39,5 @@ def won? (board)
 end
 
 def full?(board)
-  board.all? do |i|
-    result = position_taken?(board,i)
-    binding.pry
-  end
+  board.none? {|element| element == " "}
 end
