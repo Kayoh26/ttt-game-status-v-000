@@ -40,6 +40,7 @@ end
 
 def full?(board)
   board.all? do |i|
-    position_taken?(board,i)
+    result = position_taken?(board,i)
+    binding.pry
   end
 end
