@@ -51,5 +51,5 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).find {|element| element == "O" || element == "X"}
+  won?(board).detect {|element| element == "O" || element == "X"}
 end
