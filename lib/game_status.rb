@@ -52,7 +52,6 @@ end
 
 def winner(board)
    if !won?(board).nil?
-     win_indexes = won?(board)
-     board[win_indexes[0]]
+     board[won?(board)[0]]
    end
 end
