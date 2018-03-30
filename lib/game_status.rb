@@ -51,8 +51,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).detect do |index|
-     result = board[index] == "X" || board[index] == "O"
-     binding.pry
-  end
+   win_indices = won?(board)
+   board[win_indices[0]]
 end
