@@ -52,5 +52,6 @@ end
 
 def winner(board)
    win_indices = won?(board)
-   board[win_indices[0]]
+   binding.pry
+   #board[win_indices[0]]
 end
