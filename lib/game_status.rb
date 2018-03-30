@@ -52,6 +52,8 @@ end
 
 def winner(board)
   won?(board).detect do |index|
-    board[index] == "X" || board[index] == "O"
+     result = board[index] == "X" || board[index] == "O"
+     binding.pry
+  
   end
 end
