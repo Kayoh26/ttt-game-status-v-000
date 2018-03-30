@@ -51,7 +51,8 @@ def over?(board)
 end
 
 def winner(board)
-   win_indices = won?(board)
-   binding.pry
-   #board[win_indices[0]]
+   if !won?(board).nil?
+     win_indexes = won?(board)
+     board[win_indexes[0]]
+   end
 end
